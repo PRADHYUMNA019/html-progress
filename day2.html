@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title>Day 2 HTML</title>
+    </head>
+    <body>
+        <h1>Images</h1>
+        <img src="bgimg.img">
+        <hr>
+        <h2>Images with alt attribute</h2>
+        <img src="bgimg.jpg" alt="background image">
+        <hr>
+        <img src="bgimg.jpg" alt="background image" width="300" height="100">
+        <hr>
+        <h2>Images with Loading Attribute</h2>
+        <img src="bgimg.jpg" alt="background image" width="150" height="50" loading="lazy">
+        <hr>
+        <img src="bgimg.jpg" alt="background image" width="150" height="50" loading="eager">
+        <hr>
+        <h2>Images with srcset to make responsive or to handle different resolutions</h2>
+        <p>Responsive images can be handled using the srcset attribute.</p>
+        <img src="bgimg.jpg" srcset="small.jpg 400w, medium.jpg 800w, large.jpg 1200w" alt="Beautiful landscape">
+        <hr>
+        <h2>Images with usemap attribute</h2>
+        <p>Click on laptop,phone or coffee cup in the image to learn more about them.</p>
+        <img src="https://thumbs.dreamstime.com/b/top-view-laptop-smart-phone-cup-coffee-83608932.jpg" alt="Laptop phone and coffee cup" usemap="#my-map">
+        <map name="my-map">
+            <area shape="rect" coords="30,50,540,420" href="https://en.wikipedia.org/wiki/Laptop" alt="Laptop" title="Goes to wikipedia Laptop" target="_blank">
+            <area shape="rect" coords="610,100,730,220" href="https://en.wikipedia.org/wiki/Mobile_phone" alt="phone" title="Goes to wikipedia Mobile Phone" target="_blank">
+            <area shape="circle" coords="670,400,60" href="https://en.wikipedia.org/wiki/Coffee" alt="Coffee Cup" title="Goes to wikipedia Coffee Cup" target="_blank">
+        </map>
+        <hr>
+        <h2>Background Images</h2>
+        <p style="background-image:url('https://thumbs.dreamstime.com/b/top-view-laptop-smart-phone-cup-coffee-83608932.jpg'); color:white;">This is a background image.</p>
+</body>
+</html>
+<html>
+<head>
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<h2>Link Colors</h2>
+
+<p>You can change the default colors of links</p>
+
+<a href="https://www.google.com" target="_blank">Goes to google</a>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML BOOKMARKS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 50px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .back-to-top {
+      display: block;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <a id="top"></a>
+
+  <section id="home">
+    <h1>Welcome to my website</h1>
+    <p>This is the home section.</p>
+    <a class="back-to-top" href="#top">Back to Top</a>
+  </section>
+
+  <section id="about">
+    <h1>About us</h1>
+    <p>We are the company XYZ, dedicated to providing the best services.</p>
+    <a class="back-to-top" href="#top">Back to Top</a>
+  </section>
+
+  <section id="services">
+    <h1>Our Services</h1>
+    <p>We offer a wide range of services to meet your needs.</p>
+    <a class="back-to-top" href="#top">Back to Top</a>
+  </section>
+
+  <section id="contact">
+    <h1>Contact Us</h1>
+    <p>You can reach us through the following methods:</p>
+
+    <p><strong>Email:</strong>
+      <a href="mailto:contact@example.com">contact@example.com</a>
+    </p>
+
+    <p><strong>Phone:</strong>
+      <a href="tel:+1234567890">+1 (234) 567-890</a>
+    </p>
+
+    <p><strong>Address:</strong><br>
+      <address>
+        123 Web Street,<br>
+        Code City, CA 90210<br>
+        United States
+      </address>
+    </p>
+    
+    <p><em>We're available Monday to Friday, 9 AM to 6 PM.</em></p>
+
+    <a class="back-to-top" href="#top">Back to Top</a>
+  </section>
+
+</body>
+</html>
